@@ -18,7 +18,6 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  list-style-type: none;
 }
 a {
   text-decoration: none;
@@ -34,9 +33,12 @@ img {
   height: auto;
 }
 body {
-  font-family: "Roboto", sans-serif;
-  color: #434455;
-  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff;
 }
 .section-paddings {
   padding-top: 120px;
@@ -57,23 +59,118 @@ body {
 /* ============ CONTAINER ============ */
 .container {
   max-width: 320px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 736px;
+    padding: 0 16px;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    min-width: 1280px;
   }
 }
+
+/* ============ ABOUT US ============ */
+
+.aboutus-section {
+  background-image: url(/images/aboutus/about-elements-mob@1x.png);
+  background-size: 240px 284px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-color: #1c2225;
+  padding-top: 80px;
+  padding-bottom: 62px;
+}
+.aboutus-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 0 auto;
+}
+.aboutus-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.aboutus-section-title {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 1.45;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  text-transform: capitalize;
+}
+
+.aboutus-section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.aboutus-description {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.04em;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  font-style: normal;
+  color: #fcf9f966;
+  text-align: left;
+}
+.aboutus-image {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  border-radius: 4px;
+  width: 355px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  .aboutus-section {
+    background-image: url(/images/aboutus/about-elements-tab@1x.png);
+    background-size: 335px 484px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  .aboutus-container {
+    gap: 40px;
+  }
+  .aboutus-image {
+    width: 704px;
+    height: 545px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aboutus-section {
+    background-image: url(/images/aboutus/about-elements-desk@1x.png);
+    background-size: 340px 384px;
+    padding-top: 150px;
+    padding-bottom: 80px;
+  }
+  .aboutus-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .aboutus-image {
+    margin-top: auto;
+    max-width: 594px;
+    max-height: 545px;
+  }
+}
+
 /* ============ HEADER ============ */
 .page-header {
   border-bottom: 1px solid #e7e9fc;

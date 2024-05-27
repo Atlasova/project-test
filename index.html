@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- ============ HEADER ============ -->
-    <header class="page-header">
+    <header class="page-header hidden">
       <div class="container page-header-container">
         <nav class="page-navigation">
           <a class="logo" href="./index.html"
@@ -131,14 +131,69 @@
 
     <main>
       <!-- ============ HERO ============ -->
-      <section class="hero">
+      <section class="hero hidden">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="orden-service-btn" type="button">Order Service</button>
         </div>
       </section>
+      <!-- ============ ABOUT US ============ -->
+      <section class="aboutus-section">
+        <div class="container aboutus-container">
+          <div class="aboutus-content">
+            <h2 class="aboutus-section-title">About Us</h2>
+            <div class="aboutus-section-text">
+              <p class="aboutus-description">
+                The store "Vyshyvanka Vibes" is a place where traditional
+                Ukrainian vyshyvanka comes to life with new zest and style. Our
+                store offers a wide selection of high-quality and authentic
+                embroidery, which combines the elegance of traditional
+                needlework and modern design.
+              </p>
+              <p class="aboutus-description">
+                In "Vyshyvanka Vibes" you will find various models of
+                embroidery, from classic to modern, corresponding to the latest
+                fashion trends. Our embroidery is made using natural fabrics and
+                is embroidered by highly qualified craftsmen who convey the
+                beauty of Ukrainian culture in every detail.We believe that
+                vyshyvanka is not just clothing, but a symbol of national pride,
+                the heritage of our ancestors and a way of expressing one's
+                individuality. Each embroidery from "Vyshyvanka Vibes" has its
+                own unique history and symbolism, which gives it a special
+                meaning.
+              </p>
+            </div>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                /images/aboutus/aboutus-desktop@1x.jpg 1x,
+                /images/aboutus/aboutus-desktop@2x.jpg 2x
+              " />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                /images/aboutus/aboutus-tab@1x.jpg 1x,
+                /images/aboutus/aboutus-tab@2x.jpg 2x
+              " />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                /images/aboutus/aboutus-mob@1x.jpg 1x,
+                /images/aboutus/aboutus-mob@2x.jpg 2x
+              " />
+            <img
+              class="aboutus-image"
+              src="/images/aboutus/aboutus-desktop@1x.jpg"
+              alt="aboutus-ornament"
+              width="594"
+              height="545"
+          /></picture>
+        </div>
+      </section>
       <!-- ============ OUR BENEFITS ============ -->
-      <section class="benefits-title section-paddings">
+      <section class="benefits-title section-paddings hidden">
         <div class="container benefits-container">
           <h2 class="benefits visually-hidden">Feature</h2>
           <ul class="benefits-list">
@@ -194,7 +249,7 @@
         </div>
       </section>
       <!-- ============ OUR TEAM ============ -->
-      <section class="our-team section-paddings">
+      <section class="our-team section-paddings hidden">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
           <ul class="our-team-list-list">
@@ -454,7 +509,7 @@
         </div>
       </section>
       <!-- ============ OUR PORTFOLIO ============ -->
-      <section class="section-portfolio section-paddings">
+      <section class="section-portfolio section-paddings hidden">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -724,7 +779,7 @@
     </main>
 
     <!-- ============ FOOTER ============ -->
-    <footer class="page-footer">
+    <footer class="page-footer hidden">
       <div class="container footer-wrap">
         <div class="footer-descr">
           <a class="logo-footer" href="./index.html"
